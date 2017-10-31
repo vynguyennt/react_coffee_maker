@@ -1,0 +1,71 @@
+body {
+	background: #472a0d;
+	color: #fff;
+}
+
+.logo {
+	max-width: 100%;
+	width: auto;
+	height: 45vh;
+}
+
+button a, button a:hover, button a:focus, button a:active {
+	color: inherit;
+}
+
+button.nav-btn:disabled {
+	position: relative;
+}
+
+button.nav-btn:disabled::before {
+	content: '';
+	background: url('../images/lock.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0;
+}
+
+button.espresso, button.chocolate {
+	border: solid 1px #fff;
+}
+
+.action-group {
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.error-message {
+	min-height: 24px;
+}
+
+@media screen and (min-width: 960px) {
+	.action-group {
+		bottom: 20px;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.action-group {
+		position: relative;
+		bottom: 0;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.recipes-wrapper {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: #2f1900;
+    overflow-x: hidden;
+}

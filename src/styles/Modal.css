@@ -1,0 +1,29 @@
+.Modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 40px;
+    border-radius: 5px;
+    color: #444;
+}
+
+.Overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+button.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	outline: 0 !important;
+}

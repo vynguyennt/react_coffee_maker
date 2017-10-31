@@ -1,0 +1,155 @@
+.cup {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cup-body {
+  width: 180px;
+  height: 150px;
+  background: #fff;
+  border: solid 10px #f7d6b4;
+  border-top: 0px;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.big .cup-body {
+  height: 270px;
+  margin-top: 0;
+}
+.cup-handle {
+  position: absolute;
+  width: 60px;
+  height: 85px;
+  left: 170px;
+  z-index: -1;
+  top: 20px;
+  border: solid 15px #f7d6b4;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 70%;
+  border-left: 0;
+}
+.big .cup-handle {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .cup {
+    top: 45%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .cup {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.recipe-list .cup {
+  position: relative;
+  margin: 0;
+  transform: none;
+  left: 0;
+  top: 0;
+}
+.recipe-list .cup .cup-body{
+  display: inline-block;
+  width: 130px;
+  height: 110px;
+}
+.recipe-list .cup.big .cup-body{
+  height: 200px;
+}
+.recipe-list .cup .cup-handle{
+  left: calc(50% + 60px);
+  z-index: 0;
+  width: 40px;
+  height: 65px;
+  top: 15px;
+  border-width: 10px;
+}
+.recipe-list .recipe-name {
+  color: #472a0d;
+}
+
+
+.ingredient {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+  box-sizing: border-box;
+  color: #2f1900;
+  line-height: 2.5em;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.ingredient-enter {
+  height: 0;
+}
+
+.ingredient-enter.ingredient-enter-active {
+  height: 40px;
+  transition: height 0.8s;
+}
+
+.ingredient-leave {
+  height: 40px;
+}
+
+.ingredient-leave.ingredient-leave-active {
+  height: 0;
+  transition: height 0.8s;
+}
+
+.recipe-list .ingredient {
+  height: 30px;
+  font-size: 0.8rem;
+}
+
+.recipe-list .ingredient-enter.ingredient-enter-active {
+  height: 30px;
+}
+
+.recipe-list .ingredient-leave {
+  height: 30px;
+}
+
+
+.espresso {
+  background: #2f1900;
+  color: #fff;
+}
+.hot-milk {
+  background: #fff7d9;
+}
+.steamed-milk {
+  background: #fff3db;
+}
+.foamed-milk {
+  background: #fffcec;
+}
+.chocolate {
+  background: #6d4124;
+  color: #fff;
+}
+.hot-water {
+  background: #d4ecff;
+}
+.whipped-cream {
+  background: #f1f1f1;
+}

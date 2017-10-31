@@ -1,0 +1,21 @@
+.recipe-list {
+	background: #fff;
+}
+
+.note p {
+	cursor: pointer;
+}
+
+.note p.active {
+	background: #f5ece1;
+}
+
+@media screen and (min-width: 600px) {
+	.note p {
+		display: inline-block;
+	}
+	.note p.active {
+		border-bottom: solid 2px #ecd6bc;
+		background: none;
+	}
+}
