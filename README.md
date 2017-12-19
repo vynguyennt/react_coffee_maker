@@ -4,6 +4,8 @@ This is a demo React app, that you can try making different coffee recipes, save
 
 Created by Vy Nguyen.
 
+View DEMO: https://react-coffee-maker.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
