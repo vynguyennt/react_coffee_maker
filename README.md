@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a demo React app, that you can try making different coffee recipes, save your own recipes to recipe book, and join the challenge to check your memory.
+Created by Vy Nguyen.
 
 ## Available Scripts
 
